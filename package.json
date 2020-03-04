@@ -15,7 +15,8 @@
     "infima": "0.2.0-alpha.3",
     "parse-numeric-range": "^0.0.2",
     "prism-react-renderer": "^1.0.2",
-    "react-toggle": "^4.1.1"
+    "react-toggle": "^4.1.1",
+    "webpack": "^4.42.0"
   },
   "peerDependencies": {
     "@docusaurus/core": "^2.0.0",

@@ -2,6 +2,10 @@
 
 The classic theme for Docusaurus.
 
+## 语法高亮
+
+https://github.com/facebook/docusaurus/pull/2250
+
 ## Installation
 
 Add `docusaurus/theme-classic` to your package:
