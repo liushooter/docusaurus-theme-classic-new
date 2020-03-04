@@ -6,11 +6,9 @@
  */
 
 import Prism from 'prism-react-renderer/prism';
-import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 import siteConfig from '@generated/docusaurus.config';
 
 (() => {
-  if (ExecutionEnvironment.canUseDOM) {
     const {
       themeConfig: {prism: {additionalLanguages = []} = {}},
     } = siteConfig;
@@ -22,5 +20,4 @@ import siteConfig from '@generated/docusaurus.config';
     });
 
     delete window.Prism;
-  }
 })();
