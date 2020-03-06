@@ -13,11 +13,10 @@ import siteConfig from '@generated/docusaurus.config';
       themeConfig: {prism: {additionalLanguages = []} = {}},
     } = siteConfig;
 
-    window.Prism = Prism;
+    (typeof global !== 'undefined' ? global : window).Prism = Prism;
 
     additionalLanguages.forEach(lang => {
       require(`prismjs/components/prism-${lang}`); // eslint-disable-line
     });
 
-    delete window.Prism;
 })();
